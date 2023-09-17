@@ -14,7 +14,7 @@ class Author(db.Model):
 
     @validates('name')
     def validate_name(self, key, name):
-        if name=='':
+        if name=="":
             raise ValueError("Must enter a name")
         return name
 
